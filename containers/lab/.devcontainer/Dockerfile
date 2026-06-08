@@ -22,6 +22,7 @@ RUN chmod +x /bin/entrypoint
 ENTRYPOINT [ "/bin/entrypoint" ]
 
 USER ${USERNAME}
+
 # install the latest containerlab
 RUN bash -c "$(curl -sL https://get.containerlab.dev)"
 # install coder
